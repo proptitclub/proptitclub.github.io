@@ -17,7 +17,3 @@ Tạm thời em sẽ dùng file data để làm việc cho link liệt kê các 
 ## Future 
 
 Còn nhiều chức năng sẽ làm đc nếu có file html,css đẹp em sẽ custom từ đó thì dễ hơn
-
-# deploy
-
-THay đỏi urlsite thành http://127.0.0.1:4000/ nếu ở local và proptitclub.github.io nếu deploy
