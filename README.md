@@ -20,4 +20,4 @@ Còn nhiều chức năng sẽ làm đc nếu có file html,css đẹp em sẽ c
 
 # deploy
 
-THay đỏi urlsite thành http://127.0.0.1:4000/ nếu ở local và proptitclub.github.io nếu deploy
+THay đỏi urlsite thành http://127.0.0.1:4000/ nếu ở local và https://proptitclub.github.io nếu deploy
