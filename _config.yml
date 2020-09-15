@@ -14,15 +14,10 @@ collections:
 
 social:
     - icon: fa-facebook
-      link: "#"
-    - icon: fa-twitter
-      link: "#"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
+      link: "https://www.facebook.com/clubproptit"
+
     - icon: fa-github
-      link: ""
+      link: "https://github.com/proptitclub"
 
 
 
