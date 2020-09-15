@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    <title>TekoRecommendModel - PROPTIT</title>
+    <meta name="author" content="PROPTIT" />
+    <meta name="description" content="TekoRecommendModel" />
+    <meta name="keywords" content="TekoRecommendModel, PROPTIT, " />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    <meta content="" property="fb:app_id">
+    <meta content="PROPTIT" property="og:site_name">
+
+    
+
+    
+      <meta content="TekoRecommendModel" property="og:title">
+      <meta content="article" property="og:type">
+    
+
+    
+      <meta content="PROPTIT BLOG" property="og:description">
+    
+
+    
+      <meta content="http://localhost:4000/project/RecommendSystem/" property="og:url">
+    
+
+    
+      <meta content="2020-09-15T23:54:02+07:00" property="article:published_time">
+      <meta content="http://localhost:4000/about/" property="article:author">
+    
+
+    
+
+    
+      
+    
+
+    
+      
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+
+    
+      <meta name="twitter:title" content="TekoRecommendModel">
+    
+
+    
+      <meta name="twitter:url" content="http://localhost:4000/project/RecommendSystem/">
+    
+
+    
+      <meta name="twitter:description" content="PROPTIT BLOG">
+    
+
+    
+
+    <!-- Font awesome icons -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/static/css/syntax.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/super-search.css">
+    <link rel="stylesheet" href="/static/css/thickbox.css">
+    <link rel="stylesheet" href="/static/css/projects.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-3">
+        <div class="fixed-condition">
+          <h1 class="author-name"><a href="/">PROPTIT</a></h1>
+          
+            <div class="profile-about">
+              I'm Programmer for Python & Django. I've made quite a few web apps, especially on Django.
+            </div>
+          
+          <div class="social">
+            <ul>
+              
+                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              
+                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              
+                <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              
+                <li><a href="#" target="_blank"><i class="fa fa-stack-exchange"></i></a></li>
+              
+                <li><a href="" target="_blank"><i class="fa fa-github"></i></a></li>
+              
+            </ul>
+          </div>
+          <div class="search" id="js-search">
+            <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
+            <ul class="search__results" id="js-search__results"></ul>
+          </div>
+          <hr />
+          <ul class="sidebar-nav">
+            <strong>Navigation</strong>
+            <li><a href="/index">Home</a></li>
+            
+              <li><a class="about" href="/about/">About Me</a></li>
+            
+              <li><a class="about" href="/projects/">My Projects</a></li>
+            
+              <li><a class="about" href="/feed.xml">Debug-web</a></li>
+            
+          </ul>
+        </div>
+        <!-- end /.fixed-condition -->
+      </div>
+      <div class="col-sm-8 col-offset-1 main-layout">
+        <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">TekoRecommendModel</h1>
+    
+      
+        <span class="time">Nov 2020</span> &raquo;
+        
+          <span class="tags tag-filter">AI</span>
+        
+          <span class="tags tag-filter">API</span>
+        
+          <span class="tags tag-filter">PYTORCH</span>
+        
+      
+    
+  </header>
+
+  <div class="content">
+    
+      
+        <a href="/static/projects/Structure-of-a-recommender-system.png" class="thickbox">
+          <img src="/static/projects/Structure-of-a-recommender-system.png" alt="TekoRecommendModel" title="TekoRecommendModel">
+        </a>
+      
+    
+    <hr />
+    <h1 id="update-docs-in-future">update docs in future</h1>
+<hr />
+<h1 id="recommended">Recommended</h1>
+
+<p><a href="https://travis-ci.org/joemccann/dillinger"><img src="https://travis-ci.org/joemccann/dillinger.svg?branch=master" alt="Build Status" /></a></p>
+
+<hr />
+
+<h1 id="bài-toán">Bài Toán</h1>
+
+<p><strong>Input là một trang web có user và các sản phẩm.</strong></p>
+
+<p><strong>Output đưa ra các gợi ý hợp lí cho user trong hiển thị sản phẩm, filter rank search.</strong></p>
+
+<hr />
+
+<h1 id="dữ-liệu">Dữ liệu</h1>
+
+<h2 id="user">User</h2>
+
+<p>User gồm các thông tin cơ bản. Trong đó sử dụng 1 số thông tin quan trọng cho model như :</p>
+
+<ol>
+  <li>Id_user (unique)</li>
+  <li>Nơi ở hiện tại</li>
+  <li>Nghề Nghiệp (Sinh viên)</li>
+</ol>
+
+<h2 id="sản-phẩm">Sản phẩm</h2>
+
+<p>Sản phẩm bao gồm các thông tin cơ bản để extract feature:</p>
+
+<ol>
+  <li>Id_product</li>
+  <li>Giá Thành</li>
+  <li>Loại sản phẩm</li>
+  <li>Nơi sản phẩm có thể cung cấp</li>
+</ol>
+
+<h2 id="dữ-liệu-tracking">Dữ liệu tracking</h2>
+
+<p>Mỗi một lượt clicks ta sẽ lưu lại thông tin sau để làm dữ liệu train model.</p>
+
+<ol>
+  <li>Tất cả thông tin user</li>
+  <li>Tất cả thông tin product</li>
+  <li>Thời gian xem sản phẩm user đó.</li>
+  <li>Thời lượng xem sản phẩm user đó</li>
+</ol>
+
+<p><strong>Ngoài ra còn có thể lưu rất nhiêu thuộc tính khác của user-product-tracking để extract feature cho model.</strong></p>
+
+<h1 id="model">Model</h1>
+
+<p>Việc personalize tìm kiếm là khác phức tạp. Nó đòi hỏi rất nhiều yếu tố user-sản phẩm, sản phẩm - user , user- user, thời gian, địa điểm, ngoải ra ta còn có thể khai thác rất nhiều thông tin hữu ích… Nên việc tiếp cận theo hướng rating <strong><a href="https://machinelearningcoban.com/2017/05/31/matrixfactorization/">Matrix Factorization Collaborative Filtering</a></strong> là không được khả quan.</p>
+
+<p><strong><a href="https://www.ijcai.org/Proceedings/2017/0239.pdf">DeepFM:</a></strong> đã tận dụng mô hình MF và khả năng học hiệu quả của deeplearning cho ra kết quả tốt.</p>
+
+<blockquote>
+  <p>Ảnh mô hình DEEPFM
+<img src="https://i.imgur.com/i7pUEgW.png" alt="Imgur" /></p>
+</blockquote>
+
+<hr />
+
+<p>Mô hình gồm 2 stage:</p>
+
+<ol>
+  <li>Factorization-Machine</li>
+  <li>Mạng deeplearning đơn giản.</li>
+</ol>
+
+<h2 id="factorization-machine">Factorization-Machine</h2>
+
+<p>Với <strong><a href="https://machinelearningcoban.com/2017/05/31/matrixfactorization/">Matrix Factorization Collaborative Filtering</a></strong> chúng ta bị hạn chế bởi số lượng feature hạn chế (user-item).Ý tưởng <strong><a href="https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf">d-way Factorization Machine</a></strong> là cho các feature tương tác với nhau để tim ra các thuộc tính ẩn, lúc này chúng ta có thể tự do chọn lựa các feature phù hợp bài toán của mình.</p>
+
+<h3 id="equation">Equation:</h3>
+<p><img src="https://i.imgur.com/AOMCmA1.png" alt="Imgur" /></p>
+
+<h2 id="deeplearning">deeplearning</h2>
+
+<p>deeplearning sử dụng các model mlp đơn giản đê huấn luyện mô hình.</p>
+
+<hr />
+
+<h2 id="pipeline">PipeLine</h2>
+
+<ol>
+  <li>
+    <p>Đầu vào là một vector $x^{1*d}$ d feature.</p>
+  </li>
+  <li>
+    <p>Đầu tiên ứng mỗi feature được đưa vào lớp embedding, có outshape là K ở đây K là hệ số sấp sỉ ma trận trong Matrix Factorization. Ta thu được một vector X có size = d*k.</p>
+
+    <ul>
+      <li>X đi vào stage <strong>Factorization-Machine</strong> cho ra một số scalar.</li>
+      <li>X đi vào mạng deeplearning output ra một scalar.</li>
+    </ul>
+  </li>
+  <li>
+    <p>tính tổng kết quả ở 2 stage cho ra kết quả. (Có thể cho qua các layer như softmax với bài toán classifier)</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p><strong>Sử dụng model deepMF để predict ra khả năng clicks vaò các sản phẩm của trang web. Việc này khá giống cách làm offline, mỗi user ta sẽ tính toán score clicks của tất cả sản phẩm hiện tại, sau đó gán score đó vào database để recommend top score.</strong></p>
+</blockquote>
+
+<hr />
+
+<h2 id="kinh-nghiệm">Kinh nghiệm</h2>
+
+<h3 id="weights">Weights</h3>
+
+<p>K trong <a href="https://machinelearningcoban.com/2017/06/07/svd/">Matrix Factorization</a></p>
+
+<p><img src="https://machinelearningcoban.com/assets/25_mf/mf1.png" alt="" /></p>
+
+<p>Mô hình deepMF nặng tới đâu tất cả phụ thuộc rất lớn vào hệ số K (factors). Việc tăng hệ số K giúp ta sấp sỉ mô hình tốt.</p>
+
+<p>Tuy nhiên trong thực tế số lượng user và sản phẩm là rất lớn còn chưa kể đến các feature mà chúng ta lựa chọn thêm.</p>
+
+<p>Output của lớp embedding sẽ là tổng số lượng unique ở tất cả feature * K, vì thế nên chọn K nhỏ khoảng 10-15.</p>
+
+<p><strong>Khi K đủ lớn việc tăng thêm K là không cần thiết</strong>. <a href="https://machinelearningcoban.com/2017/06/07/svd/">xem thêm</a></p>
+
+<hr />
+
+<h2 id="ưu-điểm">Ưu điểm</h2>
+
+<ol>
+  <li>Predict offline - Recommend online.</li>
+  <li>Mô hình nhỏ có thể dùng cpu để train.</li>
+  <li>Mô hình phù hợp với bài toán cần phải có nhiều feature để trích xuất thông tin.</li>
+</ol>
+
+<hr />
+
+<h2 id="hạn-chế">Hạn chế.</h2>
+
+<ol>
+  <li>Khi có một sản phẩm,user mới hoặc feature xuất hiện thêm các tiền lệ chưa có thì cần trainning lại.
+    <ul>
+      <li>Do đặc tính embedding thì việc thêm 1 user vào sẽ thêm 1 vector trong embedding các vector khác không thay đổi.</li>
+      <li>Trainning lại thì có thể transfer được.</li>
+    </ul>
+  </li>
+  <li>Chưa có đủ data để train model và đánh giá chính xác. Data cũng rất khó để dùng cơm fake :v.</li>
+</ol>
+
+<hr />
+
+
+  </div>
+</article>
+
+        <footer>
+          &copy; PROPTIT
+          
+          <div class="btn-github" style="float:right;">
+            <iframe src="https://ghbtns.com/github-btn.html?user=tuenv2kProPTIT&repo=TekoRecommendModel&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=tuenv2kProPTIT&repo=TekoRecommendModel&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20px"></iframe>
+          </div>
+          
+        </footer>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/super-search.js"></script>
+    <script src="/static/js/thickbox-compressed.js"></script>
+    <script src="/static/js/projects.js"></script>
+  </body>
+</html>
+
