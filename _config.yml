@@ -1,12 +1,10 @@
 title: PROPTIT
 description: PROPTIT BLOG
 author: PROPTIT
-github:
+github: "https://github.com/proptitclub"
 about: PROPTIT-CLUB
-
 enableTags: true
 tagarray: []
-
 collections:
   project:
     output: true
@@ -19,16 +17,11 @@ social:
     - icon: fa-github
       link: "https://github.com/proptitclub"
 
-
-
 urls:
     - text: About Me
       url: /about/
-    - text: My Projects
+    - text: Project
       url: /projects/
-    - text: Debug-web
-      url: /feed.xml
-
 url: "https://proptitclub.github.io/"
 baseurl: ""
 paginate: 20
