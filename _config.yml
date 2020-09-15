@@ -29,7 +29,7 @@ urls:
     - text: Debug-web
       url: /feed.xml
 
-url: ""
+url: "https://proptitclub.github.io/"
 baseurl: ""
 paginate: 20
 per_page: 20
