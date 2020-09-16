@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    <title>Hướng dẫn viêt bài - PROPTIT</title>
+    <meta name="author" content="PROPTIT" />
+    <meta name="description" content="Hướng dẫn viêt bài" />
+    <meta name="keywords" content="Hướng dẫn viêt bài, PROPTIT, tutorial" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+    <meta content="" property="fb:app_id">
+    <meta content="PROPTIT" property="og:site_name">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+      <meta content="Hướng dẫn viêt bài" property="og:title">
+      <meta content="article" property="og:type">
+    
+
+    
+      <meta content="PROPTIT BLOG" property="og:description">
+    
+
+    
+      <meta content="http://localhost:4000/README.html" property="og:url">
+    
+
+    
+
+    
+      <meta content="http://localhost:4000/static/img/posts/tutorial.1.jpeg" property="og:image">
+    
+
+    
+      
+        <meta content="tutorial" property="article:section">
+      
+    
+
+    
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+
+    
+      <meta name="twitter:title" content="Hướng dẫn viêt bài">
+    
+
+    
+      <meta name="twitter:url" content="http://localhost:4000/README.html">
+    
+
+    
+      <meta name="twitter:description" content="PROPTIT BLOG">
+    
+
+    
+
+    <!-- Font awesome icons -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/static/css/syntax.css">
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/super-search.css">
+    <link rel="stylesheet" href="/static/css/thickbox.css">
+    <link rel="stylesheet" href="/static/css/projects.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-3">
+        <div class="fixed-condition">
+          <h1 class="author-name"><a href="/">PROPTIT</a></h1>
+          
+            <div class="profile-about">
+              PROPTIT-CLUB
+            </div>
+          
+          <div class="social">
+            <ul>
+              
+                <li><a href="https://www.facebook.com/clubproptit" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              
+                <li><a href="https://github.com/proptitclub" target="_blank"><i class="fa fa-github"></i></a></li>
+              
+            </ul>
+          </div>
+          <div class="search" id="js-search">
+            <input type="text" placeholder="(sitemap)~$ type to search" class="search__input form-control" id="js-search__input">
+            <ul class="search__results" id="js-search__results"></ul>
+          </div>
+          <hr />
+          <ul class="sidebar-nav">
+            <strong>Navigation</strong>
+            <li><a href="/index">Home</a></li>
+            
+              <li><a class="about" href="/about/">About Me</a></li>
+            
+              <li><a class="about" href="/projects/">Project</a></li>
+            
+              <li><a class="about" href="/category/AI">Category</a></li>
+            
+          </ul>
+        </div>
+        <!-- end /.fixed-condition -->
+      </div>
+      <div class="col-sm-8 col-offset-1 main-layout">
+        <header class="post-header">
+  <h1 class="post-title">Hướng dẫn viêt bài</h1>
+</header>
+
+<span class="time"></span>
+
+  <span class="categories">
+    &raquo; <a href="/category/tutorial">tutorial</a>
+  </span>
+
+
+<div class="content">
+  <div class="post"><h1 id="bố-cục-blog">Bố cục blog</h1>
+
+<p>Gồm 4 mục chính</p>
+
+<ol>
+  <li>_posts : Lưu tất cả các bài blog.</li>
+  <li>category.</li>
+  <li>project : lưu tất cả các bài trong team dự án, <strong>Có thể viết trong _post cũng được nhưng 
+sẽ không được liệt kê trong project.</strong></li>
+  <li>data : Gồm thông tin liên quan project.</li>
+</ol>
+
+<hr />
+
+<h1 id="_post">_post</h1>
+
+<p>Post được đặt vào bất kì folder nào trong _post đều được thậm chí là không nằm trong folder nào.Nguyên tắc là jeykyl sẽ lấy hết các post trong _post ra và chỉ phân loại theo tên.Ví dụ muốn làm 1 post về computer vison thì có thể taọ thêm folder computer vision trong _post, đê đẩy các bài vào cho dễ quản lí.</p>
+
+<p>Nguyên tắc đặt tên post : <strong>date:%Y-%m-%d-slug.md</strong></p>
+
+<p>Nguyên tắc thêm Liquid vào 1 post : 1 post có thể có vô số tag tùy mục đích muốn sử dụng. Nhưng phải có đủ 3 tag sau:</p>
+
+<ol>
+  <li>layout: post</li>
+  <li>title:  “Hướng dẫn viêt bài”</li>
+  <li>categories: [các category sẽ liệt kê vào đây]</li>
+</ol>
+
+<p>Optional:</p>
+<ol>
+  <li>image : Lưu ảnh đại diện post.</li>
+  <li>github: True nếu muốn add link github vào cuối - cái này sẽ lấy API từ github để theo dõi số lượng start… trên 1 repo.</li>
+</ol>
+
+<hr />
+
+<h1 id="category">Category</h1>
+
+<p>Mỗi một post sẽ có 1 category và nếu muốn post đó có thể xuất hiện theo category thì phải đảm bảo thư mục category có slug đó. Xem các category có sẵn để tùy chỉnh thêm category.</p>
+
+<hr />
+<h1 id="project-data">Project-data</h1>
+
+<p>Project hoạt động tương tự như _post tuy nhiên để tách riêng post và các team dự án :v. Cái này như là 1 cách lọc sẵn category do em đặt ra thôi, mọi người hoàn toàn có thể viết trong post và đặt category là team dự án :v. Nhưng project thường có nhiều thứ quan tâm nên em nghĩ tách ra.</p>
+
+<p>Do project gồm các post không trong _post của jeykyll nên phải viết 1 file config để dễ dàng sử dụng. (Các post không nằm trong _post sẽ không được đưa vào site.post).</p>
+</div>
+  <div class="share-page">
+  <span style="float: left;">Share this on &rarr;&nbsp;&nbsp;</span>
+
+  <!-- Twitter -->
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+  <!-- Facebook -->
+  <div class="fb-share-button" data-href="http://localhost:4000/README.html" data-layout="button_count" style="position: relative; top: -8px; left: 3px;"></div>
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</div>
+
+
+  
+    
+      
+        
+          
+            
+            <div class="panel-body">
+              <h4>Related Posts</h4>
+              <ul>
+            
+                <li class="relatedPost">
+                  <a href="http://localhost:4000/tutorial/2020/09/16/tutorial.html">Hướng dẫn viêt bài</a>
+                  
+                    (Categories: <a href="/category/tutorial">tutorial</a>)
+                  
+                </li>
+          
+          
+        
+      
+    
+  
+    
+      
+        
+          
+      
+    
+        
+          
+      
+    
+  
+  
+  </ul>
+</div>
+
+
+<div class="PageNavigation">
+  
+  
+</div>
+
+<div class="disqus-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var disqus_shortname = "";
+    var disqus_identifier = "http://localhost:4000_Hướng dẫn viêt bài";
+    var disqus_title = "Hướng dẫn viêt bài";
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    /* ]]> */
+  </script>
+</div>
+
+        <footer>
+          &copy; PROPTIT
+          
+        </footer>
+      </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/super-search.js"></script>
+    <script src="/static/js/thickbox-compressed.js"></script>
+    <script src="/static/js/projects.js"></script>
+  </body>
+</html>
+
