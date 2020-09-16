@@ -22,6 +22,8 @@ urls:
       url: /about/
     - text: Project
       url: /projects/
+    - text : Category
+      url : /category/AI
 url: "https://proptitclub.github.io/"
 baseurl: ""
 paginate: 20
