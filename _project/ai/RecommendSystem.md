@@ -86,7 +86,8 @@ deeplearning sử dụng các model mlp đơn giản đê huấn luyện mô hì
 
 ## PipeLine
 
-1. Đầu vào là một vector $x^{1*d}$ d feature.
+
+1. Đầu vào là một vector $$x^{1d}$$ gồm d feature.
 
 2. Đầu tiên ứng mỗi feature được đưa vào lớp embedding, có outshape là K ở đây K là hệ số sấp sỉ ma trận trong Matrix Factorization. Ta thu được một vector X có size = d*k.
 

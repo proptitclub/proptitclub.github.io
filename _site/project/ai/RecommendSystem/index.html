@@ -12,7 +12,12 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <meta content="" property="fb:app_id">
     <meta content="PROPTIT" property="og:site_name">
-
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script type="text/javascript" async src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
@@ -29,7 +34,7 @@
     
 
     
-      <meta content="2020-09-16T07:06:01+07:00" property="article:published_time">
+      <meta content="2020-09-16T07:32:59+07:00" property="article:published_time">
       <meta content="http://localhost:4000/about/" property="article:author">
     
 
@@ -231,7 +236,7 @@
 
 <ol>
   <li>
-    <p>Đầu vào là một vector $x^{1*d}$ d feature.</p>
+    <p>Đầu vào là một vector \(x^{1d}\) gồm d feature.</p>
   </li>
   <li>
     <p>Đầu tiên ứng mỗi feature được đưa vào lớp embedding, có outshape là K ở đây K là hệ số sấp sỉ ma trận trong Matrix Factorization. Ta thu được một vector X có size = d*k.</p>
