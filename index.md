@@ -6,6 +6,8 @@ hide_description: false
 description: "PROPTIT"
 ---
 
+![image](/assets/img/PROPTIT.jpg)
+
 🔖🔖[GIỚI THIỆU CLB]
 
 ---
