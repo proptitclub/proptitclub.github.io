@@ -1,0 +1,65 @@
+# The primary author of this blog.
+# Must be the same as `author` in `_config.yml`.
+# Change `author1` to your shortname.
+author1:
+  name:              PROPTIT
+  email:             
+
+  # Used at the bottom of each page and at the top of the `about` layout
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:             |
+    PROPTIT CLUB
+
+
+
+  picture:
+    path:            /assets/icons/profile.jpg
+    srcset:
+      1x:            /assets/icons/profile.jpg
+      2x:            /assets/icons/profile.jpg
+
+  # Social media icons in sidebar
+  # Comment/uncommet to show/hide
+  # Rearrange to change the order in which they appear
+  social:
+    github:          https://github.com/proptitclub
+    facebook:        https://www.facebook.com/clubproptit
+    linkedin:        
+    stackoverflow:   
+    quora:           
+    email:           
+    # resume:          /assets/Resume.pdf
+    # youtube:         N.i.l
+    # twitter:         N.i.l
+    # rss:             https://<url>/feed.xml
+    # google:          <number>
+    # vk:              <username>
+    # vimeo:           <username>
+    # vine:            <username>
+    # spotify:         <user>/<number>
+    # soundcloud:      <username>
+    # lastfm:          <username>
+    # instagram:       N.i.l
+    # flickr:          <string@string>
+    # 500px:           <username>
+    # dribbble:        <username>
+    # behance:         <username>
+    # deviantart:      <username>
+    # ello:            <username>
+    # twitch:          <username>
+    # steam:           <number>
+    # reddit:          <username>
+    # tumblr:          <username>
+    # pinterest:       <username>
+    # foursquare:      <number>
+    # yelp:            <string>
+    # npm:             <username>
+    # hackernews:      <username>
+    # trello:          <firstnamelastname>
+    # xing:            <firstname_lastname_counter>
+    # blogger:         <number>
+    # delicious:       <username>
+    # stumbleupon:     <username>
+    # paypal:          <username>
+
+
