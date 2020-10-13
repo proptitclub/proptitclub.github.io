@@ -240,7 +240,7 @@ collections:
 
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
-
+markdown: kramdown
 exclude:
   - .jekyll-cache
   - .sass-cache
