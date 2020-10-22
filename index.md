@@ -6,7 +6,7 @@ hide_description: false
 description: "PROPTIT"
 ---
 
-![image](/assets/img/PROPTIT.jpg)
+![image](/assets/img/pro.png)
 
 🔖🔖[GIỚI THIỆU CLB]
 
