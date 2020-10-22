@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tutorial 
+title: TEST post 
 description: >
   Tutorial  
 ---
@@ -43,10 +43,8 @@ Các file static được lưu vào mục assets. Để render một ảnh trong
 
 Site sử dụng mathjax để render các công thức toán.
 
-\(\sqrt(x^2)\)
-\[x^3\]
-* inline, use \( ... \),
-* block, use \[ ... \].
+$\sqrt(x^2)$
+
 ## Sau khi viết xong chỉ cần push lên github. Cli github sẽ tự render ra blog cho mình.
 
 ---
