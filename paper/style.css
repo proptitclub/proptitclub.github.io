@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tbl{
+    margin-top: 20px;
+}
+.tbl__heading{
+    width: 20%;
+}
+th{
+    padding: 10px 0px;
+}
+.list__authors{
+    display: flex;
+    text-decoration: none;
+    list-style:none ;
+}
+.title__bold{
+    display: inline;
+}

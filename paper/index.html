@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Development of Smartcall Vietnamese Text-to-Speech for VLSP 2020</h2>
+  <p><strong class="title__bold">Paper:</strong> <a href=""></a></p>	
+  <p><strong class="title__bold">Authors:</strong> Manh Cuong Nguyen, Khuong Duy Trieu, Ba Quyen Dam, Thu Phuong Nguyen, Quoc Bao Nguyen</p>
+  <p><strong class="title__bold">Abstract:</strong> An end-to-end text-to-speech (TTS) system (e.g. consisting of Tacotron-2 and WaveGlow vocoder) can achieve the state-of-the art quality in the presence of a large, professionally-recorded training database. However, the drawbacks of using neural vocoders such as WaveGlow include 1) a time-consuming training process, 2) a slow inference speed, and 3) resource hunger when synthesizing waveform from spectral features. Moreover, the synthesized waveform from the neural vocoder can inherit the noise from an imperfect training data. This paper deals with the task of building Vietnamese TTS systems from moderate quality training data with noise. Our system utilizes an end-to-end TTS system that takes advantage of the Tacotron-2 acoustic model, and a custom vocoder combining WaveGlow and High Fidelity Generative Adversarial Networks (HiFiGAN). Specifically, we used the HiFiGAN vocoder to achieve a better performance in terms of inference efficiency, and speech quality. Unlike previous works, we used WaveGlow as an effective denoiser to address the noisy synthesized speech. Moreover, the provided training data was thoroughly preprocessed using voice activity detection, automatic speech recognition and prosodic punctuation insertion. Our experiment showed that the proposed TTS system (as a combination of Tacotron-2, HiFiGAN vocoder, and WaveGlow denoiser) trained on the preprocessed data achieved a mean opinion score (MOS) of 3.77 compared to 4.22 for natural speech.</p>
+  
+  <h2>Comparison among systems: Evaluation set 1</h2>
+  <i>Random sample from Evaluation set in the paper. Comparison with real human speech.</i>
+  <table style="width:100%" class="tbl">
+    <thead>
+      <tr>
+        <th class="tbl__heading">Tacotron2 + Waveglow</th>
+        <th class="tbl__heading">Tacotron2 + HifiGAN</th>
+        <th class="tbl__heading">Tacotron2 + HifiGAN + Waveglow(Denoiser)</th>
+        <th class="tbl__heading">Ground Truth</th>
+        <th class="tbl__heading">Text</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="01306-waveglowTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01306-hifiTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01306-Denoiser.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01306-natural.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">bề cao và bề ngang tương xứng với nhau , mặc một chiếc váy đen của nông dân , đôi chân to xù đi tất len dày , và giày đen đế bệnh thừng .</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="01342-waveglowTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01342-hifiTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01342-Denoiser.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01342-natural.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">con bé nói với tôi , là người bạn anh  cùng đánh tàu với chúng tôi hồi trước đã chết rồi .</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="01345-waveglowTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01345-hifiTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01345-Denoiser.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01345-natural.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">chưa bao giờ tôi thấy một vụ nổ như thế . anh ta là một người có tài , tôi rất thích anh ta .</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="01530-waveglowTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01530-hifiTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01530-Denoiser.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01530-natural.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">mặt trời chiều tà còn chiếu qua vài ngọn núi màu nâu , in rõ hình chiếc cầu đen xì lên khoảng trống của khe núi .</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="01548-waveglowTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01548-hifiTTS.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01548-Denoiser.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="01548-natural.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">đặt nửa tá mìn nối liền với nhau  để cùng nổ một lúc , thì có thể đạt được kết quả đó một cách ung dung khoa học và gọn ghẽ .</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+
+</html>
