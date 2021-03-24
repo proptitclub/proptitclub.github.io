@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dealing with OOV in Vietnamese speechsynthesis via Multilingual end2end model</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Audio samples from "Dealing with OOV in Vietnamese speechsynthesis via Multilingual end2end model"</h2>
+  <p><strong class="title__bold">Paper:</strong> <a href="">Dealing with OOV in Vietnamese speechsynthesis via Multilingual end2end model</a></p>	
+  <p><strong class="title__bold">Authors:</strong> Manh Cuong Nguyen, Viet Lam Phung, Tien Huy Nguyen</p>
+  <p><strong class="title__bold">Abstract:</strong></p>
+  
+  <h2>Comparison among systems: Evaluation set</h2>
+  <i>All samples were used for MOS test in the paper.</i>
+  <table style="width:100%" class="tbl">
+    <thead>
+      <tr>
+        <th class="tbl__heading">Tacotron2 + Waveglow (Norm OOV)</th>
+        <th class="tbl__heading">Tacotron2 + Waveglow (Multispeaker with phoneme embedding)</th>
+        <th class="tbl__heading">Tacotron2 + Waveglow (Multispeaker with character embedding)</th>
+        <th class="tbl__heading">Multilingual TTS + HifiGAN</th>
+        <th class="tbl__heading">Text</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="1_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="1_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="1_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="1_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="2_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="2_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="2_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="2_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Trận đấu giữa Oscar Dominguez , Dennis Hatch . của châu mỹ , gặp Ralf Souquet và Jayson Shaw của châu âu . được phát sóng trực tiếp trên Sky sports.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="3_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="3_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="3_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="3_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="4_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="4_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="4_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="4_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="5_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="5_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="5_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="5_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="6_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="6_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="6_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="6_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="7_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="7_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="7_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="7_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="8_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="8_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="8_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="8_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="9_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="9_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="9_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="9_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+      <tr>
+        <td>
+          <audio controls>
+            <source src="10_old.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="10_phoneme.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="10_char.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td>
+          <audio controls>
+            <source src="10_multilingual.wav" type="audio/mpeg">
+          </audio>
+        </td>
+        <td class="text-cell" rowspan="1" style="vertical-align:center"><span class="text_e2e">Tổng thống nga Vladimir Putin . đã cho đạo diễn mỹ Oliver Stone xem một video về không quân nga oanh kích Syria.</span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+</body>
+
+</html>
